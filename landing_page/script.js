@@ -86,7 +86,6 @@ form.addEventListener('submit', retrieveFormValue);
 
 
 //modal content
-//var modal = document.getElementById("modalHelp");
 
 var btn = document.getElementsByClassName("openModalWindow");
 

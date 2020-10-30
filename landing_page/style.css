@@ -281,6 +281,7 @@ a {
         max-width: 850px;
     }
     .ourStory {
+        margin: 0px auto;
         padding: 50px;
     }
 }
