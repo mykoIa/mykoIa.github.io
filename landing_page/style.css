@@ -979,14 +979,15 @@ a {
 }
 
 .preloader__image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 64px;
-    height: 64px;
-    margin-top: -32px;
-    margin-left: -32px;
-    background: url('/sourse/load.gif') no-repeat 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background: url('./sourse/load.gif') no-repeat;
 }
 
 .loaded_hiding .preloader {
