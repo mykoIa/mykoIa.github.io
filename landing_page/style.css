@@ -497,7 +497,7 @@ a {
 .works {
     text-align: center;
     margin: auto;
-    max-width: 1087px;
+    padding: 10px 0px;
     padding-top: 70px;
     padding-bottom: 40px;
     background-color: #ffffff;
@@ -505,7 +505,11 @@ a {
 }
 
 .topRow {
-    display: block;
+    margin: 0px auto;
+    max-width: 1053px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 70px;
 }
 
@@ -516,7 +520,7 @@ a {
 .textOurWorks {
     font-family: 'Playfair Display', serif;
     float: left;
-    margin-top: 0;
+    margin: 0;
     font-weight: 700;
 }
 
@@ -535,7 +539,17 @@ a {
     border-radius: 4px;
 }
 
+.testWork {
+    width: 260px;
+    height: 150px;
+}
+
+.firstRow,
 .secondRow {
+    display: flex;
+}
+
+.thirdRow {
     display: none;
     max-height: 0;
 }
@@ -545,9 +559,11 @@ a {
     position: absolute;
 }
 
-.load-more-checker:checked~.secondRow {
+.load-more-checker:checked~.thirdRow {
     max-height: none;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .load-more-checker~.load-more-button:before {
@@ -560,7 +576,22 @@ a {
     font-size: 12pt;
 }
 
+@media (max-width: 1140px) {
+    .topRow {
+        max-width: 768px;
+    }
+}
+
 @media (max-width:890px) {
+    .testWork {
+        margin: 0px auto;
+        width: auto;
+        max-width: 95%;
+    }
+    .firstRow,
+    .secondRow {
+        display: block;
+    }
     .works {
         max-width: 768px;
     }
@@ -610,8 +641,8 @@ a {
 
 .control {
     /*#241a42*/
-    margin: auto;
-    max-width: 400px;
+    margin: 0px auto;
+    max-width: 475px;
 }
 
 
@@ -725,7 +756,7 @@ a {
 }
 
 .client {
-    margin-left: 10%;
+    margin-left: 7%;
     width: 40%;
 }
 
@@ -777,9 +808,7 @@ a {
         width: 97%;
     }
     .rightLogo {
-        margin: 0px 1%;
-        padding: 0px 1%;
-        border-left: 2px solid rgba(58, 58, 58, 0.1);
+        margin-left: 5%;
     }
 }
 
